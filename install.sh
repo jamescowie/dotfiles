@@ -8,6 +8,7 @@ ln -nfs $DOTDIR/.gitconfig ~/
 ln -nfs $DOTDIR/.githelpers ~/
 ln -nfs $DOTDIR/.gitignore_global ~/
 ln -nfs $DOTDIR/fish/config.fish ~/.config/fish/
+ln -nfs $DOTDIR/fish/functions ~/.config/fish/
 ln -nfs $DOTDIR/.osx ~/
 ln -nfs $DOTDIR/git ~/
 
