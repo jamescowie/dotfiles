@@ -85,7 +85,7 @@
     hp = "!source ~/.githelpers && show_git_head"
     r = !git l -30
     ra = !git r --all
-    #l = "!source ~/.githelpers && pretty_git_log"
+    l = "!source ~/.githelpers && pretty_git_log"
     la = !git l --all
     # git changelog 0.4.5...0.5.3 using tags or tree-ish references
     whatchanged = log --pretty=oneline --no-merges
