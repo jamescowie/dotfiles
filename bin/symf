@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Making the project with Symfony..."
+
+composer create-project symfony/framework-standard-edition . 2.4.*
+
+echo 'vendor/
+bin/' >> .gitignore
+
+git init

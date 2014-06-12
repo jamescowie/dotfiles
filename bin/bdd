@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "Making the project BDDable..."
+
+touch composer.json
+
+echo '{
+    "require": {
+        "behat/behat": "2.4.*@stable",
+        "bossa/phpspec2-expect": "dev-master"
+    },
+
+    "config": {
+        "bin-dir": "bin/"
+    }
+}' >> composer.json
+
+composer install
+
+./bin/behat --init
