@@ -12,8 +12,6 @@ set __fish_git_prompt_char_stashstate '↩'
 set __fish_git_prompt_char_upstream_ahead '↑'
 set __fish_git_prompt_char_upstream_behind '↓'
 
-#set fish_plugins brew bundler git php rbenv
-
 set PATH ~/bin /usr/local/bin /usr/local/sbin $PATH
 
 if test -e ~/.rbenv/bin/rbenv
