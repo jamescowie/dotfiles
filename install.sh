@@ -11,6 +11,6 @@ ln -nfs $DOTDIR/fish/config.fish ~/.config/fish/
 ln -nfs $DOTDIR/.osx ~/
 ln -nfs $DOTDIR/git ~/
 
-ln -nfs $DOTDIR/bin/bdd ~/bdd
-ln -nfs $DOTDIR/bin/spec ~/spec
-ln -nfs $DOTDIR/bin/symf ~/symf
+ln -nfs $DOTDIR/bin/bdd ~/bin/bdd
+ln -nfs $DOTDIR/bin/spec ~/bin/spec
+ln -nfs $DOTDIR/bin/symf ~/bin/symf
