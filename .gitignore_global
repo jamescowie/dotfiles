@@ -45,12 +45,14 @@ tmtagsHistory
 .bundle
 *dump.rdb
 *.swp
-
+.idea
 
 # Thumbnails
 ._*
 
-
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+tools/phantonhat/
+tools/vagrant/cookbooks
+tools/hobo/

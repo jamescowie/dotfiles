@@ -1,20 +1,19 @@
 # -*- sh -*-
 
 [user]
-    name = James Cowie
-    email = jcowie@inviqa.com
+    name = jamescowie
+    email = james@jcowie.co.uk
 
 [github]
     user = jamescowie
 
 [core]
     editor = atom --wait --new-wondow=false
-    excludesfile = ~/.gitignore-global
+	  excludesfile = /Users/Cowie/.gitignore_global
     pager = less -FXRS -x2
 
 [alias]
     s  = status -s
-
     diff = diff --ignore-space-at-eol -b -w --ignore-blank-lines
     cnv = commit --no-verify
     co = checkout

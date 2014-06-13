@@ -54,3 +54,4 @@ function _prompt_pwd --description 'Print the current working directory, NOT sho
 end
 
 alias p="cd ~/Projects"
+alias inv="cd ~/Sites"
