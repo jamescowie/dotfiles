@@ -13,7 +13,6 @@
     pager = less -FXRS -x2
 
 [alias]
-    s  = status -s
     diff = diff --ignore-space-at-eol -b -w --ignore-blank-lines
     cnv = commit --no-verify
     co = checkout
@@ -78,6 +77,10 @@
     st = status
     br = branch
     b = branch
+    s = status -s
+
+    # Add hunks
+    ah = !git add -p $0
 
     head = !git l -1
     h = !git head
