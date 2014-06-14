@@ -14,3 +14,5 @@
     'atom-dark-ui-slim'
     'atom-dark-syntax'
   ]
+'php-checkstyle':
+  'phpcsFixerExecutablePath': '/usr/local/bin/php-cs-fixer'
