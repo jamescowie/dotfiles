@@ -56,3 +56,5 @@ end
 alias p="cd ~/Projects"
 alias inv="cd ~/Sites"
 alias mt="cd ~/Projects/Mage-Test"
+alias ..="cd ../"
+alias ...="cd ../../"
