@@ -15,3 +15,5 @@ ln -nfs $DOTDIR/git ~/
 ln -nfs $DOTDIR/bin/bdd ~/bin/bdd
 ln -nfs $DOTDIR/bin/spec ~/bin/spec
 ln -nfs $DOTDIR/bin/symf ~/bin/symf
+
+ln -nfs $DOTDIR/.atom ~/
