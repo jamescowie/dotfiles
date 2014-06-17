@@ -17,6 +17,9 @@ fi
 
 for FILE in `git diff-index --name-status --cached $against -- | cut -c3-` ; do
     # check if the fil contains one fo the words in the list
+    if [ $FILE = "composer.lock" ]; then
+	exit 0;
+    fi;
     if grep -w $LIST $FILE; then
         echo ""
         echo "${COLOR_RED}✘ ${FILE} contains a banned word.${COLOR_NONE}"

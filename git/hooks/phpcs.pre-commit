@@ -11,7 +11,7 @@ LIST="ERROR\|Warning"
 
 if test ! -f "./bin/phpcs"; then
     echo "Error: Missing utilities! Run composer install first." >&2
-    exit 1
+    exit 0
 fi
 
 if `git rev-parse --verify HEAD >/dev/null 2>&1`; then
