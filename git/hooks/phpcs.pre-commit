@@ -7,7 +7,7 @@ COLOR_NONE="\x1B[0m"
 LIST="ERROR\|Warning"
 
 if test ! -f "./bin/phpcs"; then
-    echo "Error: Missing utilities! Run composer install first." >&2
+    echo "${COLOR_RED}✘ Error: Missing utilities! If this is PHP run composer install.${COLOR_NONE}"
     exit 0
 fi
 
