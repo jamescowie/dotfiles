@@ -23,7 +23,7 @@ default:
   suites:
     default:
       contexts:
-          -defaultContext
+          - defaultContext
 ' > behat.yml
 
 composer install
