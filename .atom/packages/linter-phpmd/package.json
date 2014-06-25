@@ -1,0 +1,29 @@
+{
+  "name": "linter-phpmd",
+  "main": "./lib/init",
+  "linter-package": true,
+  "activationEvents": [],
+  "version": "0.0.8",
+  "description": "Lint PHP on the fly, using phpmd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtomLinter/linter-phpmd"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "linter-phpmd\n=========================\n\nThis linter plugin for [Linter](https://github.com/AtomLinter/Linter) provides an interface to [phpmd](http://phpmd.org/documentation/index.html). It will be used with files that have the “PHP” and “HTML” syntax.\n\n## Installation\nLinter package must be installed in order to use this plugin. If Linter is not installed, please follow the instructions [here](https://github.com/AtomLinter/Linter).\n\n### phpmd installation\nBefore installing this plugin, you must ensure that `phpmd` is installed on your system. To install `phpmd`, do the following:\n\n1. Install [php](http://php.net).\n\n2. Install [pear](http://pear.php.net).\n\n3. Install `phpmd` by typing the following in a terminal:\n   ```\n   pear channel-discover pear.phpmd.org\n   pear channel-discover pear.pdepend.org\n   pear install --alldeps phpmd/PHP_PMD\n   ```\n\nNow you can proceed to install the linter-phpmd plugin.\n\n### Plugin installation\n```\n$ apm install linter-phpmd\n```\n\n## Settings\nYou can configure linter-phpmd by editing ~/.atom/config.cson (choose Open Your Config in Atom menu):\n```\n'linter-phpmd':\n  'phpmdExecutablePath': null #phpmd path. run 'which phpmd' to find the path\n  'rulesets': 'cleancode,codesize,controversial,design,naming,unusedcode' #phpmd rulesets\n```\n\n## Contributing\nIf you would like to contribute enhancements or fixes, please do the following:\n\n1. Fork the plugin repository.\n1. Hack on a separate topic branch created from the latest `master`.\n1. Commit and push the topic branch.\n1. Make a pull request.\n1. welcome to the club\n\nPlease note that modications should follow these coding guidelines:\n\n- Indent is 2 spaces.\n- Code should pass coffeelint linter.\n- Vertical whitespace helps readability, don’t be afraid to use it.\n\nThank you for helping out!\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-phpmd/issues"
+  },
+  "homepage": "https://github.com/AtomLinter/linter-phpmd",
+  "_id": "linter-phpmd@0.0.8",
+  "dist": {
+    "shasum": "5707e8bb1e36f6492540a781062e469f109b2cfa"
+  },
+  "_resolved": "/var/folders/jk/87zmndgs4_l877c_yrfq3th40000gn/T/d-114514-75911-r0yy9k/package.tgz",
+  "_from": "/var/folders/jk/87zmndgs4_l877c_yrfq3th40000gn/T/d-114514-75911-r0yy9k/package.tgz"
+}

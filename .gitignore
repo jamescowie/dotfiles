@@ -1,2 +1,3 @@
 .atom/.node-gyp
-.atom
+.atom/compile-cache
+.atom/storage

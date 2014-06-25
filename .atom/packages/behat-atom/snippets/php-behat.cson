@@ -1,0 +1,13 @@
+'.feature':
+  'Examples':
+    'prefix': 'Ex'
+    'body': 'Examples:\n  | $1 |'
+  'Feature':
+    'prefix': 'Fe'
+    'body': 'Feature: '
+  'Scenario Outline':
+    'prefix': 'Scenario: '
+    'body': 'Scenario Outline: '
+  'Scenario':
+    'prefix': 'Sc'
+    'body': 'Scenario: '

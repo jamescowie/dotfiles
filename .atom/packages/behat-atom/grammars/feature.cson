@@ -1,0 +1,51 @@
+'fileTypes': [
+  'feature'
+]
+'name': 'Behat Feature'
+'patterns': [
+  {
+    'captures':
+      '1':
+        'name': 'storage.type.class.feature'
+      '4':
+        'name': 'entity.name.function.feature'
+    'match': '^\\s*((Feature|Scenario\\s?(Outline|Template)?|Background|Ability|Business Need)\\b\\s*:\\s*)(.*)$'
+  }
+  {
+    'match': '^\\s*(Example|Scenario)s?\\s*:\\s*$'
+    'name': 'storage.type.var.feature'
+  }
+  {
+    'match': '@[^\\s]+'
+    'name': 'markup.bold.feature'
+  }
+  {
+    'match': '^\\s*(Given|And|When|Then|But)\\b'
+    'name': 'keyword.control.feature'
+  }
+  {
+    'match': '#(.*)$'
+    'name': 'comment.line.feature'
+  }
+  {
+    'match': '\\<\\w+\\>'
+    'name': 'constant.character.escape.feature'
+  }
+  {
+    'begin': '^\\s*\\|'
+    'end': '\\|$'
+    'name': 'string.other.feature'
+  }
+  {
+    'begin': '"'
+    'end': '"'
+    'name': 'string.interpolated.feature'
+    'patterns': [
+      {
+        'match': '\\<\\w+\\>'
+        'name': 'constant.character.escape.feature'
+      }
+    ]
+  }
+]
+'scopeName': 'source.feature'

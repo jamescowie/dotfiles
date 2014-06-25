@@ -9,7 +9,7 @@
 
 [core]
     editor = atom --wait --new-wondow=false
-	  excludesfile = /Users/Cowie/.gitignore_global
+	excludesfile = ~/.gitignore_global
     pager = less -FXRS -x2
 
 [alias]

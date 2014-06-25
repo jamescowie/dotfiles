@@ -1,0 +1,26 @@
+{
+  "name": "behat-atom",
+  "version": "0.1.2",
+  "description": "Adds Behat support to Atom.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Blackshawk/behat-atom"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "## Behat support for Atom\n\nThis packages adds Behat support for [Atom](http://atom.io). It was inspired by the [Behat Textmate bundle](https://github.com/emcconville/Behat.tmbundle).\n\nBased off of: https://github.com/emcconville/Behat.tmbundle.\n\n\n### Installation\n\nRun the following command:\n\n```sh\napm install behat-atom\n```\n\nAfter it is complete, you will need to reopen Atom.\n\n![screenshot](http://i.imgur.com/vSRxOtr.png)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/Blackshawk/behat-atom/issues"
+  },
+  "homepage": "https://github.com/Blackshawk/behat-atom",
+  "_id": "behat-atom@0.1.2",
+  "dist": {
+    "shasum": "a3b29467d7726c6ce23df199d430f8ea2cd264e4"
+  },
+  "_resolved": "/var/folders/jk/87zmndgs4_l877c_yrfq3th40000gn/T/d-114413-92818-1fiqqxe/package.tgz",
+  "_from": "/var/folders/jk/87zmndgs4_l877c_yrfq3th40000gn/T/d-114413-92818-1fiqqxe/package.tgz"
+}
