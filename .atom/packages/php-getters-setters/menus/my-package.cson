@@ -1,0 +1,21 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'PHP Getters and Setters': 'php-getters-setters:showUI'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'PHP Getters and Setters'
+      'submenu': [
+        { 'label': 'Generate All', 'command': 'php-getters-setters:allGettersSetter' }
+        { 'label': 'Generate Getters', 'command': 'php-getters-setters:allGetters' }
+        { 'label': 'Generate Setters', 'command': 'php-getters-setters:allSetters' }
+        { '-': '-'}
+        { 'label': 'Open UI', 'command': 'php-getters-setters:showUI' }
+        # { 'label': 'Add Property', 'command': 'php-getters-setters:newPropery' }
+      ]
+    ]
+  }
+]

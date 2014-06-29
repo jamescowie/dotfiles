@@ -57,3 +57,5 @@ tools/phantonhat/
 tools/vagrant/cookbooks
 
 .idea/
+tools/capistrano/.build
+.sass-cache
