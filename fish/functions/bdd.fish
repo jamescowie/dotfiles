@@ -29,4 +29,15 @@ default:
 composer install
 ./bin/behat --init
 git init
+
+echo '<?xml version="1.0" encoding="utf-8" ?>
+<phpunit bootstrap="./vendor/autoload.php">
+    <testsuites>
+        <testsuite name="Project test suite">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>' > phpunit.xml
+
+mkdir tests
 end
