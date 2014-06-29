@@ -22,6 +22,11 @@ you need to do is update the git repo.
 g pull
 ```
 
+## Requirements
+To use these dot files you will need to have:
+*   Fish Installed
+*   Composer installed and available via common loaded path and named ( composer )
+
 ## About
 
 These DotFiles contain many useful additions / helpers to my most commonly used applications. I have added / collected functions that extend fish for:
@@ -29,4 +34,4 @@ These DotFiles contain many useful additions / helpers to my most commonly used 
 *   Vagrant to alias v to vagrant
 *   A sane and maintainable fish config
 
-The git configuration I have included is a mixture of several sources. Alistair Stead ( https://github.com/alistairstead/dotfiles ) Being the main inspiration 
+The git configuration I have included is a mixture of several sources. Alistair Stead ( https://github.com/alistairstead/dotfiles ) Being the main inspiration
