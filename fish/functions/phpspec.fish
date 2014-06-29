@@ -2,7 +2,17 @@ function phpspec --description '±PHPSpec shortcut'
     if test -e ./bin/phpspec
         ./bin/phpspec $argv
     else
-        echo 'Whoops PHPSpec is not installed. Are you in a project ?'
+        set_color red
+        echo 'Whoops PHPSpec is not installed.'
+        if test -f "composer.json"
+            set_color purple
+            echo 'Shall we install PHPSpec for you ? [yN]'
+            read action
+            if contains "y" $action
+                composer require 'phpspec/phpspec *'
+            end
+        end
+
     end
 end
 
