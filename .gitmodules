@@ -1,0 +1,3 @@
+[submodule "PHPStorm/PHPStorm-SpacePeacock"]
+	path = PHPStorm/PHPStorm-SpacePeacock
+	url = git@github.com:ShawnMcCool/PHPStorm-SpacePeacock.git
