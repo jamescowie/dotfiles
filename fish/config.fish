@@ -14,6 +14,9 @@ set __fish_git_prompt_char_upstream_behind '↓'
 
 set PATH ~/bin /usr/local/bin /usr/local/sbin $PATH
 
+# Set atom to be default editor
+setenv EDITOR atom
+
 if test -e ~/.rbenv/bin/rbenv
     set PATH ~/.rbenv/bin $PATH
     . (rbenv init - | psub)
