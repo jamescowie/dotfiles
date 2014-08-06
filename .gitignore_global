@@ -61,3 +61,4 @@ tools/capistrano/.build
 .sass-cache
 bin
 vendor
+public/skin/frontend/rwd/enterprise/images/media/

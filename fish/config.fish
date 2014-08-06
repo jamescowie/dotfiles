@@ -12,7 +12,7 @@ set __fish_git_prompt_char_stashstate '↩'
 set __fish_git_prompt_char_upstream_ahead '↑'
 set __fish_git_prompt_char_upstream_behind '↓'
 
-set PATH ~/bin /usr/local/bin /usr/local/sbin $PATH
+set PATH ~/bin /usr/local/bin /usr/local/sbin /Users/Cowie/Projects/Android/sdk/platform-tools $PATH
 
 # Set atom to be default editor
 setenv EDITOR atom
