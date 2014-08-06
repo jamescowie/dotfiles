@@ -7,7 +7,7 @@ COLOR_RED="\x1B[31m"
 COLOR_GREEN="\x1B[32m"
 COLOR_NONE="\x1B[0m"
 
-LIST="debugger\|console\|TODO\|FIXME\|BANNED\|var_dump\|<<<\|AWS|composer"
+LIST="debugger\|console\|TODO\|FIXME\|BANNED\|var_dump\|<<<\|AWS"
 
 if `git rev-parse --verify HEAD >/dev/null 2>&1`; then
     against=HEAD
