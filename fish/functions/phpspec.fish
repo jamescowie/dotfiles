@@ -9,11 +9,11 @@ function phpspec --description '±PHPSpec shortcut'
             echo 'Shall we install PHPSpec for you ? [yN]'
             read action
             if contains "y" $action
-                composer require 'phpspec/phpspec *'
+                composer require 'phpspec/phpspec ~2.0' --dev
             end
         else
             set_color purple
-            echo 'Shall we install add composer for you? [yN]'
+            echo 'Shall we install composer and PHPSpec for you? [yN]'
             read action
             if contains "y" $action
                 echo '
