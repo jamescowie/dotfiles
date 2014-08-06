@@ -7,7 +7,7 @@ COLOR_RED="\x1B[31m"
 COLOR_GREEN="\x1B[32m"
 COLOR_NONE="\x1B[0m"
 
-LIST="debugger\|console\|TODO\|FIXME\|BANNED\|var_dump\|<<<\|AWS"
+LIST="debugger\|console\|TODO\|FIXME\|BANNED\|var_dump\|<<<\|AWS|composer"
 
 if `git rev-parse --verify HEAD >/dev/null 2>&1`; then
     against=HEAD
@@ -30,7 +30,7 @@ for FILE in `git diff-index --name-status --cached $against -- | cut -c3-` ; do
         if [ "$FORCE" = 'Y' ]; then
             exit 0
         fi
-        exit 1        
+        exit 1
     fi
 done
 echo "${COLOR_GREEN}✔ No banned words detected${COLOR_NONE}"
