@@ -12,52 +12,36 @@ set __fish_git_prompt_char_stashstate '↩'
 set __fish_git_prompt_char_upstream_ahead '↑'
 set __fish_git_prompt_char_upstream_behind '↓'
 
-set PATH ~/bin /usr/local/bin /usr/local/sbin /Users/Cowie/Projects/Android/sdk/platform-tools $PATH
+set PATH ~/bin /usr/local/bin /usr/local/sbin $PATH
+
+set PATH $HOME/.rbenv/bin $PATH
+set PATH $HOME/.rbenv/shims $PATH
+rbenv rehash >/dev/null ^&1
+
+set --export PYTHONPATH /usr/local/lib/python2.7/site-packages
 
 # Set atom to be default editor
 setenv EDITOR atom
 
-if test -e ~/.rbenv/bin/rbenv
-    set PATH ~/.rbenv/bin $PATH
-    . (rbenv init - | psub)
-    rbenv rehash > /dev/null ^&1
-end
-
-function fish_prompt
-    set last_status $status
-
-    set_color green
-    printf '┌─┤ %s@%s ├─ ' (whoami) (hostname|cut -d . -f 1)
-
-    set_color blue
-    printf '%s' (_prompt_pwd)
-
-    printf '%s \n' (__fish_git_prompt)
-
-    set_color green
-    printf '└─┤'
-
-    set_color cyan
-    printf ' %s ' (date "+%H:%M:%S")
-
-    set_color green
-    printf '  ├─ '
-    set_color $fish_color_cwd
-    printf '$ '
-
-    set_color normal
-end
-
-function _prompt_pwd --description 'Print the current working directory, NOT shortened to fit the prompt'
-    if test "$PWD" != "$HOME"
-        printf "%s" (echo $PWD|sed -e 's|/private||' -e "s|^$HOME|~|")
-    else
-        echo '~'
-    end
-end
 
 alias p="cd ~/Projects"
 alias inv="cd ~/Sites"
 alias mt="cd ~/Projects/Mage-Test"
 alias ..="cd ../"
 alias ...="cd ../../"
+
+# Path to your oh-my-fish.
+set fish_path $HOME/.oh-my-fish
+
+# Theme
+set fish_theme robbyrussell
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
+# Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
+# Example format: set fish_plugins autojump bundler
+
+# Path to your custom folder (default path is $FISH/custom)
+#set fish_custom $HOME/dotfiles/oh-my-fish
+
+# Load oh-my-fish configuration.
+. $fish_path/oh-my-fish.fish
