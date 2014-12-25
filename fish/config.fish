@@ -13,6 +13,8 @@ set __fish_git_prompt_char_upstream_ahead '↑'
 set __fish_git_prompt_char_upstream_behind '↓'
 
 set PATH ~/bin /usr/local/bin /usr/local/sbin $PATH
+set PATH ~/.composer/vendor/bin $PATH
+set PATH ~/bin $PATH
 
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
@@ -23,12 +25,13 @@ set --export PYTHONPATH /usr/local/lib/python2.7/site-packages
 # Set atom to be default editor
 setenv EDITOR atom
 
-
 alias p="cd ~/Projects"
 alias inv="cd ~/Sites"
-alias mt="cd ~/Projects/Mage-Test"
 alias ..="cd ../"
 alias ...="cd ../../"
+alias magento="cd ~/Projects/Magento"
+alias c="composer"
+alias jcowie="cd /Users/jamescowie/Projects/Personal/jamescowie.github.io"
 
 # Path to your oh-my-fish.
 set fish_path $HOME/.oh-my-fish
