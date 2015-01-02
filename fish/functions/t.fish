@@ -2,7 +2,7 @@ function t --description '±Tree shortcut'
     if count $argv >/dev/null
         tree $argv
     else
-        tree
+        tree -L 1
     end
 end
 
