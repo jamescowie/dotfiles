@@ -1,5 +1,6 @@
 function article --description '±Create a new article for my site'
     if count $argv >/dev/null
+        g co master
         g pull
         g co -b feature/post_$argv
         set date (date +"%Y-%m-%d")
@@ -13,8 +14,6 @@ comments: true
 share: true
 ---        
 ' > _posts/$date-$argv.md
-
-
     else 
         echo "Requires a post name: article [article name]"
     end
