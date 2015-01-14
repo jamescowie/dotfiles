@@ -1,4 +1,0 @@
-'.feature':
-  'editor':
-    'increaseIndentPattern': '^\\s*.*(:|-)\\s*.*?$'
-    'commentStart': '# '
