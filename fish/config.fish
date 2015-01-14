@@ -23,7 +23,7 @@ rbenv rehash >/dev/null ^&1
 set --export PYTHONPATH /usr/local/lib/python2.7/site-packages
 
 # Set atom to be default editor
-setenv EDITOR atom
+setenv EDITOR emacs
 
 alias p="cd ~/Projects"
 alias inv="cd ~/Sites"
