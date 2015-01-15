@@ -48,3 +48,6 @@ set fish_theme robbyrussell
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
+
+# Stop the defult fish greeting
+set fish_greeting ""
