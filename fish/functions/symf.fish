@@ -7,5 +7,6 @@ bin/' >> .gitignore
 
 composer require "phpspec/phpspec *"
 composer require "behat/behat >3"
+composer require "bossa/phpspec2-expect *"
 git init
 end
