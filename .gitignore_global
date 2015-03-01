@@ -62,3 +62,5 @@ tools/capistrano/.build
 bin
 vendor
 public/skin/frontend/rwd/enterprise/images/media/
+.vagrant/
+dev/tools/Magento/Tools/SampleData/

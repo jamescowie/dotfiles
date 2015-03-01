@@ -10,8 +10,8 @@ echo '{
         "bin-dir": "bin/"
     },
     "autoload": {
-        "psr-0": {
-            "":"src/"
+        "psr-4": {
+            "Jcowie\\CoreDomain":"src/"
         }
     }
 }' > composer.json
@@ -40,4 +40,8 @@ echo '<?xml version="1.0" encoding="utf-8" ?>
 </phpunit>' > phpunit.xml
 
 mkdir tests
+
+g aa
+g ci -m 'First commit'
+
 end

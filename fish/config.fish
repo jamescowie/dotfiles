@@ -14,6 +14,7 @@ set __fish_git_prompt_char_upstream_behind '↓'
 
 set PATH ~/bin /usr/local/bin /usr/local/sbin $PATH
 set PATH ~/.composer/vendor/bin $PATH
+set PATH ~/.composer/bin $PATH
 set PATH ~/bin $PATH
 
 set PATH $HOME/.rbenv/bin $PATH
@@ -37,11 +38,13 @@ alias jcowie="cd /Users/jamescowie/Projects/Personal/jamescowie.github.io"
 set fish_path $HOME/.oh-my-fish
 
 # Theme
-set fish_theme robbyrussell
+#set fish_theme robbyrussell
+set fish_theme bobthefish
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
 # Example format: set fish_plugins autojump bundler
+set fish_plugins autojump
 
 # Path to your custom folder (default path is $FISH/custom)
 #set fish_custom $HOME/dotfiles/oh-my-fish
@@ -51,3 +54,11 @@ set fish_theme robbyrussell
 
 # Stop the defult fish greeting
 set fish_greeting ""
+
+# Fish colour customisations
+set fish_color_autosuggestion "-o" "black"
+set fish_color_command "-o" "cyan"
+set fish_color_param "cyan"
+set fish_color_error "red"
+
+source /Users/jamescowie/.phpbrew/phpbrew.fish
