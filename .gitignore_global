@@ -59,7 +59,6 @@ tools/vagrant/cookbooks
 .idea/
 tools/capistrano/.build
 .sass-cache
-bin
 vendor
 public/skin/frontend/rwd/enterprise/images/media/
 .vagrant/

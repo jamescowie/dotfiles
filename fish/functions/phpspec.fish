@@ -1,6 +1,6 @@
 function phpspec --description '±PHPSpec shortcut'
     if test -e ./bin/phpspec
-        ./bin/phpspec $argv --format=pretty
+        ./bin/phpspec $argv 
     else
         set_color red
         echo 'Whoops PHPSpec is not installed.'

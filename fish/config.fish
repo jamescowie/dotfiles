@@ -17,6 +17,8 @@ set PATH ~/.composer/vendor/bin $PATH
 set PATH ~/.composer/bin $PATH
 set PATH ~/bin $PATH
 
+set PATH /Users/jamescowie/pebble-dev/PebbleSDK-current/bin $PATH
+
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
