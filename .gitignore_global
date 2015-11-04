@@ -64,3 +64,7 @@ public/skin/frontend/rwd/enterprise/images/media/
 .vagrant/
 dev/tools/Magento/Tools/SampleData/
 bin/
+app/code/Magento/SampleData/
+
+pub/homepage-content/
+upgradeHelper.sh
